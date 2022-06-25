@@ -1,0 +1,38 @@
+Felix Omuok12:44
+Task : 
+
+A basic to-do app where we can 
+- Create a new task*
+- Edit task
+- Delete task
+- See list of all created tasks 
+
+*Creating new task
+Title : ABC
+Message : Hello world.
+Timestamp : new Date(),
+categoryName : note, todo, plan, 
+
+There should be 2 collections 
+tasks, Categories, 
+which should be connected through the key categoryName.
+
+Q. Also get count of all categories wise tasks from db. (from both collections)
+Felix Omuok13:03
+mongodb aggregation pipeline
+Felix Omuok13:13
+
+[
+  {
+    id: "Categor 1",
+    taskCount: 12
+  },
+  {
+    id: "Categor 2",
+    taskCount: 7
+  },
+];
+
+GEt all Categories route
+Felix Omuok13:16
+When one category is deleted. I want all task tied to that category to be also delted
